@@ -1,0 +1,17 @@
+class Solution:
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        f=[]
+        m=max(candies)
+        g=[]
+        h=[]
+        for i in candies:
+            a=i+extraCandies
+            f.append(a)
+        for a in f:
+            if a>=m:
+                g.append(True)
+            else:
+                g.append(False)
+        print(g)
+        h=g
+        return h
