@@ -1,1 +1,2 @@
-Soltuions to all Leetcode problems
+Solution to interview challenge LeetCode 75 problems
+
