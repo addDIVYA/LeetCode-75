@@ -1,0 +1,22 @@
+class Solution:
+    def timeRequiredToBuy(self, tickets: List[int], k: int) -> int:
+        c=0
+        g=sum(tickets)
+        for i in range(k+1,len(tickets)):
+            if tickets[i]>=tickets[k]:
+                c+=1
+        print(c)
+        count=0
+        g=sum(tickets)
+        while(tickets[k]!=0):
+            for i in range(0,len(tickets)):
+                if tickets[i]==0:
+                    continue   
+                else:
+                    tickets[i]=int(tickets[i]-1)
+        print(tickets)
+        a=sum(tickets)
+        print(a)
+        b=g-a
+        v=b-c
+        return v
